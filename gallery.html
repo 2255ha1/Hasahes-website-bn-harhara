@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض صور وفيديو حصاحص</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*
+         * هذه التنسيقات ضرورية لضمان عمل خاصية التحميل التدريجي بشكل صحيح.
+         * تحدد شكل وحجم العناصر الوهمية قبل تحميل المحتوى الحقيقي.
+         */
+        .gallery-item-placeholder {
+            width: 100%;
+            /* يمكنك تعديل الارتفاع ليناسب تصميمك، هذا يمنع العناصر من التداخل */
+            height: 300px;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            /* إضافة تأثير تحميل بسيط */
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        /*
+         * تأثير التحميل (animation) يضفي لمسة جمالية أثناء انتظار تحميل المحتوى.
+         */
+        @keyframes pulse {
+            0% {
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="site_logo.png" alt="شعار قرية حصاحص" class="site-logo">
+            <h1>معرض حصاحص</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="gallery-container" class="gallery-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 حصاحص الجميلة. جميع الحقوق محفوظة لـ {هــــايـــــل هــــرهــــره}✓.</p>
+    </footer>
+
+    <section class="feedback-section">
+        <div class="feedback-container">
+            <h3>لديك فكرة؟ أو اقتراح؟</h3>
+            <p>شاركنا رأيك. صوتك يهمنا لتطوير وتحسين الموقع!</p>
+            <div class="feedback-buttons">
+                <a href="https://wa.me/+967780767543" target="_blank" class="contact-button whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> واتساب
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100083555105187" target="_blank" class="contact-button facebook-button">
+                    <i class="fab fa-facebook-f"></i> فيسبوك
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="gallery.js" defer></script>
+</body>
+</html>

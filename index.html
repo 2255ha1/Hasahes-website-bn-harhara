@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدينتي الجميلة - اكتشف سحر المكان</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="popup-active">
+    <div class="main-content-wrapper">
+        <header>
+            <div class="header-content">
+                <img src="site_logo.png" alt="شعار قرية حصاحص" class="site-logo">
+                <h1>مرحباً بكم في الموقع الرسمي لقرية حصاحص!</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="gallery.html">المعرض</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <img src="your-city-image.jpg" alt="صورة التقطها (هايل عيدروس محمد هرهره) من جانب دار المشتل التاريخي في 2017م" class="hero-image">
+            
+            <p>اكتشف جمال وتاريخ مدينة حصاحص الرائعة من خلال مجموعة من الصور ومقاطع الفيديو القصيرة التي تعرض سحرها الخفي وجمالها الطبيعي.</p>
+                
+            <div class="about-section">
+                <h2>لماذا حصاحص مميزة؟</h2>
+                <p>حصاحص ليست مجرد مكان على الخريطة، بل هي قلب نابض بالتاريخ، الثقافة، والطبيعة الخلابة.
+                اكثر ساكنيها سلاطين آل هرهره .
+                تتميز بـ: جمالها الطبيعي وطيبه اهلها وسكانها، وتنوع التراث فيها، ومناظرها الطبيعية الخضراء التي تأسر الألباب.</p>
+            </div>
+
+            <p>انطلق في جولة بصرية فريدة واستمتع بالمناظر الخلابة والمعالم المميزة التي تجعل مدينتنا وجهة لا تُنسى. كل زاوية تحكي قصة، وكل مشهد يأسرك بجماله.</p>
+
+            <a href="gallery.html" class="btn-primary">استكشف معرض الصور والفيديو</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 حصاحص الجميلة. جميع الحقوق محفوظة لـ {هــــايـــــل هــــرهــــره}✓.</p>
+        </footer>
+    </div>
+
+    <div id="adPopup" class="ad-popup-overlay">
+        <div class="ad-popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>لا تفوت الفرصة!</h2>
+            <img src="ad-image.jpg" alt="إعلان مركز وبنشر قلب صبر لصيانة السيارات" class="ad-image">
+            <p>العنوان: لحج_صبر_خط عدن تعز_امام محطة البدوي للبترول!</p>
+        </div>
+    </div>
+
+    <div id="loginPopup" class="login-popup-overlay show">
+        <div class="login-popup-content">
+            <h2>مرحباً بك في حصاحص!</h2>
+            <p>يرجى إدخال معلوماتك لمتابعة التصفح:</p>
+            <div class="login-form-group">
+                <label for="fullName">الاسم الرباعي واللقب:</label>
+                <input type="text" id="fullName" placeholder="اكتب اسمك معا اللقب هنا" required>
+                <span id="fullNameError" class="error-message"></span>
+            </div>
+            <div class="login-form-group">
+                <label for="villageName">اسم القرية/المنطقة:</label>
+                <input type="text" id="villageName" placeholder="مثل: حصاحص، رصد، يافع" required>
+                <span id="villageNameError" class="error-message"></span>
+            </div>
+            <button id="submitLogin" class="login-button">تأكيد الدخول</button>
+        </div>
+    </div>
+
+    <script src="index.js" defer></script>
+</body>
+</html>

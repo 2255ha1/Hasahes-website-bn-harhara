@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دار المشتل - معلومات تفصيلية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-color: #f8f9fa;
+            --text-color: #343a40;
+            --header-footer-bg: #343a40;
+            --card-bg: #ffffff;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            text-align: center;
+            line-height: 1.6;
+            direction: rtl;
+        }
+
+        header {
+            background-color: var(--header-footer-bg);
+            color: #fff;
+            padding: 1.5em 0;
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-family: 'El Messiri', serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 5px 0;
+            transition: color 0.3s ease-in-out;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            text-align: right;
+        }
+
+        .container h2 {
+            font-family: 'El Messiri', serif;
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .image-gallery {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .image-gallery h3 {
+            font-family: 'El Messiri', serif;
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+
+        .gallery-item {
+            margin-bottom: 30px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .gallery-item p {
+            font-size: 0.95em;
+            color: var(--secondary-color);
+            font-style: italic;
+            text-align: center;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+
+        footer {
+            background-color: var(--header-footer-bg);
+            color: #fff;
+            padding: 1.5em 0;
+            margin-top: 30px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+            .container h2 {
+                font-size: 1.6em;
+            }
+            .container p, .gallery-item p {
+                font-size: 0.95em;
+            }
+            .back-button {
+                width: 100%;
+                padding: 12px 0;
+            }
+            .image-gallery h3 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>معرض حصاحص</h1>
+        <p>
+        اعداد:هايل هرهره
+       <p>
+         ٧٨٠٧٦٧٥٤٣
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>دار المشتل: تفاصيل تاريخية وجمالية</h2>
+        
+        <img src="dar_al_mashtal_details_large.jpg" alt="صورة كبيرة لدار المشتل" class="main-image"> 
+        <h3>"دار المشتل".. شاهد على أمجاد التاريخ في قلب يافع
+في أحضان منطقة حصاحص التابعة لمديرية الحد بيافع، يقف شامخًا أحد أبرز المعالم التاريخية وأكثرها عراقة: 
+<p>
+"دار المشتل". هذا البرج الحجري القديم، الذي يعود تاريخه إلى زمن سلاطين آل هرهره، ليس مجرد بناء، بل هو نبضٌ حي من تاريخ اليمن العظيم.
+<h3>
+ما الذي يميز "دار المشتل"؟
+<p>
+ * موقع استراتيجي: يتربع الدار على قمة تل صخري مرتفع، مانحًا إياه إطلالة مهيبة وموقعًا دفاعيًا لا يُضاهى، يتيح له السيطرة والرؤية الشاملة للمناطق المحيطة.
+ <p>
+ * عمارة أصيلة: يتميز بتصميمه المربع القوي وبنائه المتين من الحجارة الصلبة، التي صمدت عبر القرون في وجه عوامل الزمن والتغيرات، ليروي كل حجر فيه قصة من الصمود والتاريخ.
+ <p>
+ * إرث تاريخي: كونه مرتبطًا بفترة حكم سلاطين آل هرهره، يضفي على "دار المشتل" قيمة تاريخية وثقافية استثنائية، ليصبح رمزًا للعراقة والأصالة في هذه المنطقة الغنية بالتراث.
+ <p>
+ * جمال طبيعي: ينسجم الدار ببراعة مع محيطه الجبلي الصخري، وتتخلله مساحات خضراء في الوديان المحيطة، مما يرسم لوحة فنية تجمع بين قسوة الطبيعة وجمالها الأخاذ.
+ <p>
+"دار المشتل" ليس مجرد بناء من الماضي، بل هو تذكير دائم بعظمة الحضارات التي قامت على هذه الأرض، ورمز حي لصمود الإنسان اليمني وتشبثه بتاريخه العريق.
+</h3>
+        <h3>
+            يعد دار المشتل معلمًا تاريخيًا بارزًا في حصاحص يافع، وشاهدًا على العمارة اليمنية الأصيلة. يعود تاريخ بناء هذا الصرح الشامخ إلى قرون مضت، حيث كان بمثابة قصر للسلطان قديماً ونقطة مراقبة استراتيجية، مما يعكس الأهمية التاريخية للمنطقة. يتميز الدار بتصميمه المعماري الفريد الذي يجمع بين القوة والجمال، باستخدام الحجارة الصلبة والطوب الطيني، مع نوافذ صغيرة وشرفات تطل على الوديان المحيطة.
+        </h3>
+        <h5>
+            يرتبط دار المشتل ارتباطًا وثيقًا بتاريخ سلاطين آل هرهره، الذين حكموا المنطقة لفترات طويلة. يُقال إنه كان جزءًا من ممتلكاتهم أو نقطة دفاعية رئيسية لهم. الجدران السميكة والتصميم المحصن للدار تشهد على الحياة القاسية والتحديات الأمنية التي كانت سائدة في تلك العصور، وكيف استطاع الأجداد بناء هياكل تدوم لقرون.
+        </p>
+        
+        <p>
+            اليوم، يقف دار المشتل كرمز للتراث الثقافي لحصاحص، ويجذب الزوار الراغبين في استكشاف التاريخ العريق والاستمتاع بجمال العمارة التقليدية. 
+            <p>
+            <p>
+ المنطقة المحيطة بالدار غنية بالمناظر الطبيعية الخلابة، مما يجعله وجهة مثالية للمهتمين بالتاريخ والطبيعة على حد سواء. نأمل أن يتم الحفاظ على هذا الإرث الثمين ليبقى مصدر إلهام للأجيال القادمة.@هايل هرهره
+        </p>
+        
+        <div class="image-gallery">
+            <h3>صور إضافية لدار المشتل</h3>
+
+            <div class="gallery-item">
+                <img src="dar_al_mashtal.jpg.jpg" alt="منظر خارجي لدار المشتل">
+                <p>صورة قديمة للسلطان الذهب والشيخ ناصر منصر وبعض اهل المنطقة بجانب دار المشتل التراثي. الدار يظهر روعة التصميم المعماري ومدى صلابة البناء.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="image1.jpg" alt="صورة محسّنة بالذكاء الاصطناعي لمنطقة حصاحص من جوار دار المشتل">
+                <p>صورة بانورامية فريدة التُقطت من جوار دار المشتل، لكنها مُعزّزة بالذكاء الاصطناعي لتُظهر جمال قرية حصاحص من الأعلى بوضوح ودقة غير مسبوقة. يبرز في هذا المشهد حي المطرح التاريخي، مما يجمع بين عراقة الماضي وجمال التكنولوجيا الحديثة في لقطة واحدة.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="mashtal_details1.jpg" alt="صورة لمنطقة حصاحص من جانب المشتل">
+                <p>لقطة جميلة تبرز جمال المنطقة. تم التقاط الصورة من جنب دار المشتل في عام (2017م) بواسطة:هـــايـــل عيدروس محمد صالح هرهره .</p>
+            </div>
+
+            </div>
+        
+        <a href="gallery.html" class="back-button">العودة إلى المعرض</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 حصاحص الجميلة. جميع الحقوق محفوظة لـ {هــــايـــــل هــــرهــــره}✓.</p>
+    </footer>
+</body>
+</html>
